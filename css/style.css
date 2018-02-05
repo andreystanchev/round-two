@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face { font-family: "raleway"; src: url(../fonts/raleway/raleway-regular.ttf); }
+@font-face { font-family: "raleway-bold"; src: url(../fonts/raleway/raleway-bold.ttf); }
+@font-face { font-family: "myraid"; src: url(../fonts/MyriadPro-Regular.otf); }
+.container { margin: 0px auto; padding-top: 30px; padding-bottom: 30px; }
+a:hover, a:visited, a:link, a:active { text-decoration: none; }
+.header-logo a { 
+    display: block; 
+    cursor: pointer; 
+    background: url(../images/logo.png) no-repeat; 
+    background-size: contain; 
+    height: 45px;
+}
+.header-menu { padding-left: 0px; padding-right: 0px; }
+#desktop-nav { display: block; }
+
+#mobile-nav-container{ padding-top: 10px; padding-bottom: 10px; display: none; }
+#mobile-nav { display: none; position: relative; }
+#mobile-nav-btn { width: 32px; display: block; margin: 8px auto; cursor: pointer; }
+#mobile-nav-wrapper { display: block; }
+#mobile-nav-list { font: 17px "raleway"; text-align: center; margin: 13px 0px; display: block; position: relative;
+                   padding: 0 30px;}
+#mobile-nav-list li { padding: 10px 0; border-top: 1px solid #484848; }
+#mobile-nav-list li:first-child { border-top: none; }
+#mobile-nav span { display: block; width: 32px; height: 5px; padding: 0; margin: 0 auto 5px auto; background: #484848; }
+
+.header-menu ul li { float: left; text-align: center; margin: 13px 0px; display: block; position: relative;}
+.header-menu ul li a { font: 14.5px "raleway"; color: black; margin: 0px 15px; padding-bottom: 15px;  }
+.header-menu ul li a:hover {  border-bottom: 2px solid #064e81; }
+.header-menu ul li:after { content: "";
+    position: absolute;
+    width: 1px;
+    background: #000;
+    height: 100%;
+    display: block;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: auto; }
+.header-menu ul li:last-child::after { display: none; }
+#last-menu-item { border-right: none; }
+.header-menu-phone a { font: 30px "raleway-bold"; text-align: center; }
+.header-menu-phone .mobile-phn { display: none; background: url('../images/phone-small.png') no-repeat; background-size: cover;
+                                 width: 50px; height: 50px; margin: 0 auto; }
+.section1 { background-color: #074b87; position: relative; overflow: hidden; }
+.section1-h1 h1 { font: 33px "raleway-bold"; text-align: center; color: #fff; margin-top: 55px; margin-bottom: 35px; }
+.section1-p1 { font: 15px "raleway"; text-align: center; color: #fff; margin-bottom: 65px; }
+.section1-list1 { margin-bottom: 30px; }
+.section1-list1 ul li p { font: 19px "raleway-bold"; color: #fff; margin-left: 30px; margin-bottom: 30px; }
+.section1-button { text-align: center; }
+.section1-button a { width: 225px; background-color: #ff6600; display: inline-block; text-align: center; padding: 15px 0;
+                    color: #fff; border-radius: 5px; border: 2px solid #ff6600; font: 18px "raleway"; text-transform: uppercase; }
+.section1-button a:hover { background-color: #d1e6f0; border: 2px solid #ff6600; border-radius: 5px; color: #ff6600;
+                         transition: all 0.3s;}
+.glow {
+    filter: blur(130px);
+    background-color: rgba(26,138,186,1);
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: -50%;
+    display: block;
+    border-radius: 100%;
+}
+
+h2 { font-family: "raleway-bold", Arial, sans-serif; font-size: 32px; }
+h2, .copyright { text-align: center; }
+
+.section2 { background: #f7f7f7;  }
+.section2 .container { padding-top: 60px; padding-bottom: 60px; }
+.section2 .benefit-image { display: block; margin: 0 auto; padding-bottom: 10px; }
+.section2 .title-span { font-family: "raleway-bold", Arial, sans-serif; font-size: 22px; color: #015b98; text-align: center; display: block;
+                        padding-bottom: 30px; }
+.section2 span { font-family: "raleway", Arial, sans-serif; font-size: 18px; text-align: center; display: block; padding-bottom: 35px; }
+.benefits { position: relative; }
+.benefits.first:after { content: ''; width: 80px; height:15px; position: absolute; display: block; top: 0; right: -40px;
+                              background: url('../images/top-arrow.png') no-repeat; background-size: cover; z-index: 999; }
+.benefits.second:after { content: ''; width: 80px; height:15px; position: absolute; display: block; bottom: 0; right: -40px;
+    background: url('../images/bottom-arrow.png') no-repeat; background-size: cover; z-index: 999; }
+.section3 {  }
+.section3 .container { padding-top: 60px; padding-bottom: 55px; }
+.section3 h2 { color: #015b98; padding-bottom: 35px; }
+.section3 p , .section3 ol { color: #707070; font-family: "raleway", Arial, sans-serif; font-size: 15px; }
+.section3 p { padding-bottom: 75px; }
+.section3 ol { list-style-position: inside;}
+.section3 ol li { padding-bottom: 70px; }
+.section3 ol li:last-child { padding-bottom: 0px; }
+.section3 img { width: 100%; }
+
+
+.section4 { background: url("../images/footer-background.png") no-repeat; background-position: cover; background-size: 100% 100%; }
+.section4 .container { padding-top: 60px; padding-bottom: 60px; }
+.section4 h2 { color: #fff; padding-bottom: 40px; }
+.section4 .button { width: 100%; display: inline-block; border: 2px solid #fff; 
+                   font-family: "raleway-bold", Arial, sans-serif; font-size: 20px; padding: 13px 10px;
+                   text-align: center; text-transform: uppercase; border-radius: 5px; color: #fff; }
+.section4 #cta-btn { border: 2px solid #ff6600; background: #ff6600; }
+.section4 #cta-btn:hover { border: 2px solid #ff7800; background: #ff7800; }
+
+footer .container { padding-top: 45px; padding-bottom: 45px; }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    header.container { padding-top: 20px; padding-bottom: 20px; }
+    .header-menu-phone .desktop-phn { display: none; }
+    .header-menu-phone .mobile-phn { display: block; }
+    .main-header-text { display: none; }
+    #desktop-nav { display: none; }
+    #mobile-nav { display: block; }
+    .section1-list1 ul li { margin-bottom: 20px; }
+    .section1-list1 ul li:last-child { margin-bottom: 0px; }
+    .section1-list1 ul li p { margin-left: 0; margin-bottom: 0; text-align: center; font-size: 26px; text-decoration:underline; }
+    .section1-list1 ul li p.price-text { font-size: 18px; text-decoration: none; text-transform: uppercase; }
+    .section1-button a { width: 320px; }
+    .section3 .content-container { padding-left: 30px; padding-right: 30px; }
+    .section3 .inner-content { padding-left: 25px; padding-right: 25px; }
+    .section3 p { padding-bottom: 30px; }
+    #ordered-list { padding-bottom: 30px; }
+    .section4 .cta-buttons div { margin-bottom: 20px; }
+
+    .benefits.first:after { width: 80px; height:15px; top: auto; bottom: 0px; right: -20px; transform: rotate(90deg); }
+    .benefits.second:after { width: 80px; height:15px; bottom: 0; left: -20px; transform: rotate(90deg); }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    
+}
+
+
+
